@@ -1,0 +1,82 @@
+/*-------------------------------------------------------
+35. Blog css  
+---------------------------------------------------------*/
+
+
+
+.blog-box {
+	.blog-pic {
+		img {
+			width: 100%;
+		}
+	}
+	.blog-desc {
+		h4 {
+			line-height: 1.2;
+			margin-bottom: 1.3rem;
+		}
+		.blog-text {
+			margin-bottom: 2rem;
+			padding-bottom: 2rem;
+			border-bottom: 1px solid var(--clr-body-2);
+		}
+		.blog-meta {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-size: 1.4rem;
+			i {
+				color: var(--clr-def);
+			}
+			.blog-admin {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+			}
+			.blog-like-com {
+				display: flex;
+				align-items: center;
+				gap: 20px;
+				.blog-like {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+				}
+				.blog-com {
+					display: flex;
+					align-items: center;
+					gap: 10px;
+				}
+			}
+		}
+	}
+}
+
+.blog-df {
+    display: grid;
+    grid-template-columns: 286px 1fr;
+    grid-gap: 30px;
+	margin-bottom: 30px;
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+//Blog Page 
+
+.blog-df {
+	&.blog-page-df {
+		grid-template-columns: 550px 1fr;
+		align-items: center;
+	}
+}
+
+.blog-page-shadow {
+	box-shadow: 3px 4px 20px rgba(0,0,0,.15);
+	background: var(--clr-white);
+	margin-bottom: 3rem;
+	border-radius: 0 0 10px 10px;
+	.blog-desc {
+		padding: 5rem;
+	}
+}

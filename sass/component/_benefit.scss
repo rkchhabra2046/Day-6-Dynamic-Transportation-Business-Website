@@ -1,0 +1,46 @@
+/*-------------------------------------------------------
+42. Benefit css 
+---------------------------------------------------------*/
+
+.benefit-single {
+	padding: 5rem 3rem;
+	border-radius: 10px;
+	i {
+		width: 7rem;
+		display: block;
+		margin-bottom: 30px;
+	}
+}
+
+.benefit-one {
+	background: rgba(11, 77, 245, 0.1);
+	h4 {
+		text-transform: capitalize;
+	}
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.benefit-two {
+	box-shadow: 0 3px 40px 0 rgba(0, 0, 0, .10);
+	background-color: var(--clr-white);
+	h4 {
+		margin-bottom: 0;
+		line-height: 1;
+	}
+}
+
+.heading-regular {
+	line-height: 5.3rem;
+    font-weight: 500;
+	font-size: 42px;
+}
+
+.benefit-star {
+    position: absolute;
+    z-index: -1;
+    bottom: 0;
+    right: 0;
+    width: 30rem;
+}

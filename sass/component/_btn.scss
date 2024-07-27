@@ -1,0 +1,238 @@
+/*-------------------------------------------------------
+09. BTN Css  
+---------------------------------------------------------*/
+
+/*Theme Button*/
+
+@mixin btn-style {
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 2.5rem 5.5rem;
+	background-color: var(--clr-def);
+	color: var(--clr-white);
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	line-height: 1;
+	transition: all .5s ease;
+}
+
+.btn-transparent {
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 1.5rem 3.5rem;
+	background-color: transparent;
+	border: none;
+	color: var(--clr-white);
+	border-radius: 5px;
+	outline: 1px solid var(--clr-white)!important;
+	line-height: 1;
+	transition: all .5s ease;
+	&.btn-home-2 {
+		outline: 1px solid var(--clr-def)!important;
+		color: var(--clr-heading);
+	}
+	&:hover {
+		background-color: var(--clr-white);
+		color: var(--clr-heading);
+	}
+}
+
+.btn-transparent-md {
+	padding: 2rem 5.4rem;
+}
+
+.service-btn-2 {
+	padding: 1.2rem 3rem;
+	line-height: 1;
+	background-color: var(--clr-white);
+	border: 1px solid transparent;
+	color: var(--clr-heading);
+	border-radius: 8px;
+	transition: all .5s ease;
+	display: inline-block;
+	font-weight: 600;
+	line-height: 1;
+	&:hover {
+		border: 1px solid var(--clr-white);
+		background-color: transparent;
+		color: var(--clr-white);
+	}
+}
+
+.btn-1 {
+	@include btn-style;
+	i {
+		margin-left: 1rem;
+	}
+	&:hover {
+		background-color: var(--clr-def-2); 
+		color: var(--clr-white); 
+	}
+}
+
+.btn-2 {
+	display: inline-block;
+	padding: 2rem 4rem;
+	color: var(--clr-white);
+	border-radius: 4px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	border: none;
+	outline: none;
+	line-height: 1;
+	position: relative;
+	z-index: 1;
+	transition: all .5s ease; 
+	 &::before {
+		position: absolute;
+		content: '';
+		height: 100%;
+		width: 100%;
+		z-index: -1;
+		background: var(--clr-def);
+		opacity: 1;
+		border-radius: 4px;
+		top: 0;
+		left: 0;
+		transition: all .5s ease;
+		border-radius: 100px;
+	}
+	i {
+    	margin-left: 1rem; 
+	}
+	 &:hover {
+		background: var(--clr-black);
+		color: var(--clr-white); 
+		 &::before {
+			scale: 0;
+		}
+	}
+}
+
+.btn-3 {
+    font-weight: 600;
+    color: var(--clr-white);
+    border: none;
+    background: var(--clr-def);
+    padding: 0 3rem;
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+	 &:hover {
+		background: var(--clr-black);
+		color: var(--clr-white); 
+		 &::before {
+			scale: 0;
+		}
+	}
+}
+
+.btn-4 {
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 1.5rem 3.5rem;
+	background-color: var(--clr-white);
+	border: none;
+	color: var(--clr-heading);
+	border-radius: 5px;
+	line-height: 1;
+	transition: all .5s ease;
+	&:hover {
+		background-color: var(--clr-def);
+		color: var(--clr-white);
+	}
+}
+
+
+.btn-5 {
+	display: inline-block;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 700;
+	padding: 2.5rem 5.5rem;
+	background-color: var(--clr-def);
+	color: var(--clr-white);
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	line-height: 1;
+	transition: all .5s ease;
+	&:hover {
+		background-color: var(--clr-white); 
+		color: var(--clr-black); 
+	}
+}
+
+
+.btn-md {
+	padding: 2rem 5.4rem;
+}
+
+.btn-sm {
+	padding: 1.5rem 3.5rem;
+}
+
+.btn-second {
+	background-color: var(--clr-def-2);
+	&:hover {
+		background-color: var(--clr-def); 
+		color: var(--clr-white); 
+	}
+}
+.btn-gradient {
+	background: linear-gradient(90deg, #0072ff 0%, #00d4ff 100%);
+	&:hover {
+		background: var(--clr-def); 
+		color: var(--clr-white); 
+	}
+}
+.btn-circle {
+	border-radius: 100px;
+}
+.btn-border {
+	border: 2px solid var(--clr-white);
+	background-color: transparent;
+	&:hover {
+		background-color: var(--clr-def); 
+		color: var(--clr-white); 
+		border: 2px solid var(--clr-def);
+	}
+}
+.btn-black {
+	background-color: var(--clr-black);
+	&:hover {
+		background-color: var(--clr-white); 
+		color: var(--clr-black); 
+	}
+}
+.btn-white {
+	background-color: var(--clr-white);
+	color: var(--clr-black); 
+	&:hover {
+		background-color: var(--clr-black); 
+		color: var(--clr-white); 
+	}
+}
+.btn-no-rad {
+	border-radius: 0;
+}
+
+.btn-sub {
+    height: 7rem;
+    width: 7rem;
+    border: none;
+    background-color: var(--clr-def);
+    border-radius: 2px;
+    outline: none;
+}
+
+
+

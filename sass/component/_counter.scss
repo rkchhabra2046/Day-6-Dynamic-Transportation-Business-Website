@@ -1,0 +1,57 @@
+/*-------------------------------------------------------
+28. Counter Css  
+---------------------------------------------------------*/
+
+.center-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.counter-title {
+	h2 {
+		color: var(--clr-white);
+	}
+	span {
+		color: var(--clr-white);
+		.hero-line {
+			background-color: var(--clr-white);
+			&::before {
+				background-color: var(--clr-white);
+			}
+			&::after {
+				background-color: var(--clr-white);
+			}
+		}
+	}
+}
+
+.counter-1 {
+	border-left: 1px solid var(--clr-white);
+	padding-left: 8rem;
+	.fun-fact {
+		.counter-icon {
+			margin-bottom: 3rem;
+		}
+		.counter {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			font-size: 60px;
+			font-weight: 600;
+			color: var(--clr-white);
+			line-height: 1;
+			margin-bottom: 2rem;
+		}
+		span {
+			font-weight: 600;
+			color: var(--clr-white);
+			display: block;
+			font-size: 1.5rem;
+			line-height: 1;
+		}
+	}
+}
+

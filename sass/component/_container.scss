@@ -1,0 +1,127 @@
+/*-------------------------------------------------------
+31. Container css 
+---------------------------------------------------------*/
+
+@media (min-width: 1250px) {
+	.container, 
+	.container-lg, 
+	.container-md, 
+	.container-sm, 
+	.container-xl, 
+	.container-xxl {
+		max-width: 1250px;
+	}
+}
+
+.container-full {
+	padding: 0 15px;
+	margin: auto;
+	max-width: 1400px;
+}
+
+@media (max-width: 576px) {
+	.container-full {
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+@media (min-width: 576px) {
+	.container-full {
+		max-width: 540px;
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.container-full {
+		max-width: 720px;
+		width: 100%;
+	}
+}
+
+@media (min-width: 992px) {
+	.container-full {
+		max-width: 960px;
+		width: 100%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container-full {
+		max-width: 95%;
+		width: 95%;
+	}
+}
+
+.container-fill {
+	padding: 0 15px;
+	margin: auto;
+	max-width: 100%;
+}
+
+@media (min-width: 576px) {
+	.container-fill {
+		max-width: 540px;
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.container-fill {
+		max-width: 720px;
+		width: 100%;
+	}
+}
+
+@media (min-width: 992px) {
+	.container-fill {
+		max-width: 960px;
+		width: 100%;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container-fill {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 1199px) {
+	.container-fill {
+		padding: 0 15px;
+		width: 100%;
+	}
+}
+
+@media only screen and (min-width: 1367px) {
+	.container-stage {
+		margin-left: calc((100% - 1250px)/ 2);
+		width: auto;
+		max-width: inherit;
+		padding-right: 0;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.row {
+		--bs-gutter-x: 1.5rem;
+	}
+}
+
+.bg-cover {
+	background-position: center center !important;
+	background-size: cover !important;
+}
+
+.bg-fixed {
+	background-attachment: fixed !important;
+	background-position: center center !important;
+	background-size: cover !important;
+}
+
+.bg-fit {
+	background-size: 100% 100% !important;
+	background-position: center !important;
+}

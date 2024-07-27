@@ -1,0 +1,46 @@
+/*-------------------------------------------------------
+45. CTA css  
+---------------------------------------------------------*/
+
+
+
+.cta-wpr {
+	.heading-1 {
+		color: var(--clr-white);
+	}
+}
+
+.cta-contact {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	justify-content: center;
+	.cta-contact-icon {
+		i {
+			height: 65px;
+			width: 65px;
+			line-height: 65px;
+			text-align: center;
+			background-color: var(--clr-white);
+			display: inline-block;
+			-webkit-border-radius: 50%;
+			border-radius: 50%;
+			position: relative;
+			z-index: 1;
+		}
+	}
+	.cta-contact-desc {
+		text-align: left;
+		span {
+			display: block;
+			margin-bottom: 10px;
+			line-height: 1;
+			color: var(--clr-white);
+		}
+		h4 {
+			color: var(--clr-white);
+			line-height: 1;
+		}
+	}
+}
+

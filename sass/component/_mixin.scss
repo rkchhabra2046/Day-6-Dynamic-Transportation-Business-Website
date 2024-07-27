@@ -1,0 +1,21 @@
+
+
+/*-------------------------------------------------------
+02. Mixins Css #070E27 #5416CF #0B0F28;
+---------------------------------------------------------*/
+
+@mixin pos-rel {
+	position: relative;
+	z-index: 1;
+}
+
+@mixin pos-abs($bcolor,$h,$w,$opacity) {
+	position: absolute;
+    content: '';
+	height: $h;
+    width: $w;
+    z-index: -1;
+    background: $bcolor;
+    opacity: $opacity;
+}
+

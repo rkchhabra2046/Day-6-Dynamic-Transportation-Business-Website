@@ -1,0 +1,276 @@
+/*-------------------------------------------------------
+23. Contact css 
+---------------------------------------------------------*/
+
+.contact-cn-1 {
+    position: absolute;
+    bottom: 0;
+    right: -95px;
+    width: 370px;
+}
+
+.contact-cnt {
+	box-shadow: 3px 4px 20px rgba(0,0,0,.15);
+	background-color: var(--clr-white);
+}
+
+.white-overlay {
+	position: relative;
+	z-index: 1;
+	background-repeat: repeat;
+	background-position: top left;
+	&::before {
+		@include pos-abs(var(--clr-bg),100%,90%,1);
+		top: 0;
+		right: 0;
+		-webkit-border-radius: 0 0 0 50%;
+		border-radius: 0 0 0 50%;
+	}
+}
+
+.contact-home {
+	textarea {
+		height: 205px!important;
+	}
+	.contact-form {
+		padding: 80px;
+		background: var(--clr-white);
+		.contact-form-title {
+			.heading-1 {
+				font-size: 36px;
+			}
+		}
+		.form-check-input[type=checkbox] {
+			border-radius: 0;
+			margin-top: 0;
+			vertical-align: top;
+			float: none;
+			margin-left: 0;
+		}
+		.form-check-label {
+			span {
+				color: var(--clr-def);
+			}
+		}
+	}
+	.form-control.input-style-2 {
+		border: none;
+		height: 50px;
+		outline: none;
+		border-radius: 5px;
+		box-shadow: none;
+		padding-left: 20px;
+		font-size: 14px;
+		background: #EEF3F9;
+		&::placeholder {
+			color: var(--clr-body);
+		}
+	}
+}
+
+.contact-right {
+	padding-left: 3rem;
+}
+
+.contact-up-title {
+	margin-bottom: 4rem;
+	padding-bottom: 3rem;
+	border-bottom: 1px solid #d4d4d4;
+}
+
+.addr-home {
+	.addr-box {
+		.addr-box-single {
+			&:nth-child(2) {
+				.addr-icon {
+					i {
+						background-color: var(--clr-def-2);
+					}
+				}
+			}
+			&:nth-child(3) {
+				.addr-icon {
+					i {
+						background-color: #0077B5;
+					}
+				}
+			}
+		}
+	}
+	.addr-box-single {
+		display: flex;
+		align-items: flex-start;
+		gap: 3rem;
+		margin-bottom: 3rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		.addr-icon {
+			i {
+				height: 6rem;
+				width: 6rem;
+				line-height: 6rem;
+				text-align: center;
+				font-size: 2.4rem;
+				display: block;
+				color: var(--clr-white);
+				border-radius: 5px;
+				background-color: var(--clr-def);
+			}
+		}
+		.addr-desc {
+			h5 {
+				margin-bottom: 5px;
+			}
+			p {
+			}
+		}
+	}
+}
+
+.contact-title {
+	p {
+		padding-right: 10rem;
+	}
+}
+
+.contact-page {
+	.addr-box-single {
+		display: flex;
+		align-items: center;
+		gap: 3rem;
+		margin-bottom: 5rem;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		.addr-icon {
+			i {
+				font-size: 4.5rem;
+				display: block;
+				color: var(--clr-def);
+			}
+		}
+		.addr-desc {
+			h5 {
+				margin-bottom: 5px;
+			}
+			p {
+				line-height: 1.5;
+			}
+		}
+	}
+}
+
+.contact-us-wpr.contact-page .input-style-2 {
+    color: var(--clr-white);
+}
+
+.contact-ads {
+	form {
+		background: var(--clr-gradient);
+		padding: 6rem;
+		.btn-4 {
+			border: none;
+			margin-top: 5rem;
+		}
+		.form-control {
+			background-color: transparent;
+		}
+		.form-control::placeholder  {
+			color: var(--clr-white);
+			opacity: .7;
+			
+			&:focus {
+				border: none;
+				box-shadow: none;
+				outline: none;
+					
+			}
+		}
+	}
+}
+
+.form-control.input-style-2 {
+	border: 1px solid #fff;
+	height: 50px;
+	outline: none;
+	border-radius: 5px;
+	box-shadow: none;
+	padding-left: 20px;
+	font-size: 14px;
+}
+
+.form-control.input-style-2:focus{
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #19ce67;
+}
+
+.form-title {
+	margin-bottom: 3rem;
+	text-transform: capitalize;
+}
+
+.btn-submit {
+	border: none;
+	text-transform: uppercase;
+	background-color: var(--clr-def);
+	padding: 1.2rem 4rem;
+	color: #fff;
+	border-radius: 5px;
+	transition: all .5s ease;
+	display: inline-block;
+}
+
+.btn-submit:hover {
+	background-color: #000;
+	text-decoration: none;
+	color: var(--clr-white);
+}
+
+.contact-opt-box {
+	i {
+		height: 7rem;
+		width: 7rem;
+		line-height: 7rem;
+		text-align: center;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		background-color: var(--clr-def);
+		font-size: 3rem;
+		display: inline-block;
+		color: var(--clr-white);
+		margin-bottom: 3rem;
+	}
+}
+
+.btn-4.sub-btn {
+	border: none;
+	margin-top: 5rem;
+}
+
+.appointment-here-form form .form-group{
+    position: relative;
+    z-index: 1;
+}
+
+.appointment-here-form form .form-group i {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    translate: 0 -50%;
+    color: var(--clr-def);
+    font-size: 14px;
+}
+
+/*Google Maps*/
+
+.g-map-area {
+	height: 50vh;
+}
+
+.g-map--wrapper iframe {
+    width: 100%;
+    height: 100vh;
+	border: none;
+}

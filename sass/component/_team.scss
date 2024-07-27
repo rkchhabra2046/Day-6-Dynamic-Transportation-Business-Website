@@ -1,0 +1,105 @@
+/*-------------------------------------------------------
+33. Team css 
+---------------------------------------------------------*/
+
+.team-box {
+	position: relative;
+	z-index: 1;
+	&:hover {
+		&::before {
+			background-color: var(--clr-def);
+		}
+		.team-bio {
+			h4 {
+				color: var(--clr-white);
+			}
+			span {
+				color: var(--clr-white);
+			}
+		}
+		.team-pic {
+			.team-shape {
+				display: none;
+			}
+			.team-shape-2 {
+				display: block;
+			}
+		}
+		.team-social {
+			opacity: 1;
+			visibility: visible;
+		}
+	}
+	&::before {
+		@include pos-abs(var(--clr-bg-3),280px,100%,1);
+		top: 0;
+		left: 0;
+		transition: all .5s ease;
+	}
+	.team-bio {
+		padding: 3rem 37px;
+		h4 {
+			text-transform: capitalize;
+			margin-bottom: 10px;
+			transition: all .5s ease;
+		}
+		span {
+			display: block;
+			line-height: 1;
+			font-size: 1.4rem;
+			transition: all .5s ease;
+		}
+	}
+	.team-pic {
+		position: relative;
+		z-index: 1;
+		padding: 0 37px;
+		.team-main {
+			width: 100%;
+		}
+		.team-shape {
+			position: absolute;
+			bottom: -2px;
+			left: 0;
+			width: 100%;
+			z-index: -1;
+			padding: 0 37px;
+			display: block;
+		}
+		.team-shape-2 {
+			position: absolute;
+			bottom: 0px;
+			left: 0;
+			width: 100%;
+			z-index: -1;
+			padding: 0 37px;
+			display: none;
+		}
+	}
+}
+
+.team-social {
+	position: absolute;
+	left: 6rem;
+	bottom: 6rem;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	opacity: 0;
+	visibility: hidden;
+	transition: all .5s ease;
+	li {
+		a {
+			i {
+				height: 4rem;
+				width: 4rem;
+				line-height: 4rem;
+				text-align: center;
+				border-radius: 50%;
+				color: var(--clr-white);
+				font-size: 1.8rem;
+				background-color: var(--clr-def);
+			}
+		}
+	}
+}

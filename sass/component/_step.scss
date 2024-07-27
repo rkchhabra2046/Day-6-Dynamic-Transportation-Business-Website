@@ -1,0 +1,52 @@
+/*-------------------------------------------------------
+37. Step css
+---------------------------------------------------------*/
+
+.step-box {
+    text-align: center;
+	.step-icon {
+		position: relative;
+		z-index: 1;
+		margin-bottom: 2rem;
+		.step-note-icon {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			translate: -50% -50%;
+			width: 60px;
+		}
+		.step-num {
+			position: absolute;
+			top: 35px;
+			right: 5px;
+			height: 40px;
+			width: 40px;
+			line-height: 40px;
+			text-align: center;
+			font-size: 1.6rem;
+			-webkit-border-radius: 50%;
+			border-radius: 50%;
+			background-color: var(--clr-def);
+			color: var(--clr-white);
+		}
+	}
+	.step-desc {
+		transform: translateX(-50px);
+	}
+}
+
+.step-elm-elm {
+    position: relative;
+    z-index: 1;
+}
+
+.step-elm {
+    display: flex;
+    align-items: center;
+	gap: 3rem;
+}
+
+
+
+
+

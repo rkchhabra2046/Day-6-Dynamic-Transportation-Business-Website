@@ -1,0 +1,256 @@
+
+/*-------------------------------------------------------
+07. BG css
+---------------------------------------------------------*/
+
+.colmn-2 {
+	column-count: 2;
+}
+
+.bg-fix {
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.hero-bg {
+	background-position: top left!important;
+	background-size: cover!important;
+	background-repeat: no-repeat!important;
+}
+
+.bg-top-center {
+	background-position: top center;
+	background-size: cover!important;
+	background-repeat: no-repeat!important;
+}
+
+.bg-bottom-right {
+	background-size: 56%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+}
+
+.pos-rel {
+	@include pos-rel;
+}
+
+.width-100 {
+	width: 100%;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rad-50 {
+	border-radius: 50%;
+}
+
+.c-pd {
+    padding: 0 7rem;
+}
+
+.s-pd {
+    padding: 0 12rem;
+}
+
+.h-100vh {
+	height: 100vh;
+}
+
+.bg {
+	background-color: var(--clr-bg);
+}
+
+.bg-2 {
+	background-color: var(--clr-bg-2);
+}
+
+.bg-3 {
+	background-color: var(--clr-bg-3);
+}
+
+.bg-theme {
+	background-color: var(--clr-def);
+}
+
+.bg-theme-2 {
+	background-color: var(--clr-def-2);
+}
+
+.bg-theme-3 {
+	background-color: var(--clr-def-3);
+}
+
+.bg-black {
+	background-color: var(--clr-black);
+}
+
+.bg-black-2 {
+	background-color: var(--clr-black-2);
+}
+
+.bg-grad {
+	background-image: var(--clr-gradient);
+}
+
+.bg-grad-2 {
+	background-image: var(--clr-gradient-2);
+}
+
+.bg-grad-3 {
+	background-image: var(--clr-gradient-3);
+}
+
+.bg-grad-4 {
+	background-image: var(--clr-gradient-4);
+}
+
+.bg-grad-5 {
+	background-image: var(--clr-gradient-5);
+}
+
+.bg-grad-6 {
+	background-image: var(--clr-gradient-6);
+}
+
+.bg-clr-1 {
+	background-color: var(--clr-2);
+}
+
+//width: calc(100% - 120px);
+
+.bg-blur {
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(7.5px);
+    border-radius: 10px;
+    padding: 32px 100px 36px 60px;
+    z-index: 2;
+}
+
+.wh {
+	color: var(--clr-white);
+}
+
+.bg-overlay {
+	position: relative;
+	z-index: 1;
+	&::before {
+		@include pos-abs(rgb(0, 5, 33),100%,100%,0.83);
+		top: 0;
+		left: 0;
+	}
+	
+}
+
+.hero-overlay {
+	position: relative;
+	z-index: 1;
+	&::before {
+		@include pos-abs(rgb(0,22,47),100%,100%,.8);
+		top: 0;
+		left: 0;
+	}
+	
+}
+
+//background: rgba(,0.92);
+
+.hero-overlay-2 {
+	position: relative;
+	z-index: 1;
+	&::before {
+		@include pos-abs(var(--clr-def),100%,100%,.6);
+		top: 0;
+		left: 0;
+	}
+}
+
+.hero-overlay-3 {
+	position: relative;
+	z-index: 1;
+	&::before {
+		@include pos-abs(var(--clr-gradient-3),100%,100%,.8);
+		top: 0;
+		left: 0;
+	}
+}
+
+.bubble .drop {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.1),
+    25px 35px 20px rgba(0, 0, 0, 0.1), 25px 30px 30px rgba(0, 0, 0, 0.1),
+    inset -20px -20px 25px rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem 0;
+  padding: 4rem;
+  transition: border-radius 0.5s;
+  overflow: hidden;
+  text-align: center;
+  animation: drop 2s infinite alternate ease-in-out;
+}
+
+.bubble .drop:nth-child(1) {
+  border-radius: 38% 62% 46% 54% / 46% 51% 49% 54%;
+}
+
+.bubble .drop:nth-child(2) {
+  border-radius: 38% 62% 46% 54% / 46% 51% 49% 54%;
+}
+
+.bubble .drop:nth-child(3) {
+  border-radius: 38% 62% 46% 54% / 46% 51% 49% 54%;
+}
+
+@keyframes drop {
+  from {
+    border-radius: 38% 62% 46% 54% / 46% 51% 49% 54%;
+  }
+
+  to {
+    border-radius: 50%;
+  }
+}
+
+.bubble .drop::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 75px;
+  width: 35px;
+  height: 35px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.bubble .drop::after {
+  content: "";
+  position: absolute;
+  top: 90px;
+  left: 100px;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+

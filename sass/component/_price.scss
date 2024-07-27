@@ -1,0 +1,123 @@
+
+/*-------------------------------------------------------
+32. Price css
+---------------------------------------------------------*/
+
+.price-sidebar {
+	background-color: var(--clr-def-2);
+	padding: 3rem 4rem;
+	border-radius: 8px;
+	.price-list {
+		display: flex;
+		flex-direction: column;
+		li {
+			padding-bottom: 20px;
+			margin-bottom: 20px;
+			border-bottom: 1px solid #3B3F8A;
+			color: var(--clr-white);
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			i {
+				color: var(--clr-white);
+			}
+			&:last-child {
+				padding-bottom: 0px;
+				margin-bottom: 0px;
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+.price-nav-style {
+	height: 5.6rem;
+	width: 220px;
+	background-color: var(--clr-white);
+	border-radius: 3rem;
+	.nav-link {
+		color: var(--clr-heading);
+		font-size: 1.7rem;
+		padding: 2rem 3rem;
+		line-height: 1;
+		border-radius: 3rem;
+		&.active {
+			background-color: var(--clr-def);
+		}
+	}
+}
+
+.price-box .price-right {
+	width: 225px;
+}
+
+.price-nav {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.price-box {
+	border: 2px solid ;
+    padding: 4rem;
+    background-color: var(--clr-white);
+    border-radius: 8px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 3rem;
+	margin-bottom: 3rem;
+	transition: all .5s ease;
+	&:hover {
+		background-color: var(--clr-def);
+		border: 2px solid transparent;
+		.price-left {
+			h4 {
+				color: var(--clr-white);
+			}
+			span {
+				color: var(--clr-white);
+			}
+		}
+		.price-middle {
+			.heading-1 {
+				color: var(--clr-white);
+			}
+		}
+		.price-right {
+			text-align: right;
+			.btn-1 {
+				border: 1px solid var(--clr-white);
+				color: var(--clr-white);
+				background-color: transparent;
+			}
+		}
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+	.price-left {
+		h4 {
+			line-height: 1;
+			margin-bottom: 5px;
+		}
+		span {
+			line-height: 1;
+			display: block;
+			font-size: 1.4rem;	
+		}
+	}
+	.price-middle {
+		.heading-1 {
+			border-left: 1px solid #C4C4C4;
+			padding: 0 6rem;
+		}
+	}
+	.price-right {
+		text-align: right;
+		.btn-1 {
+			border: 1px solid transparent;
+		}
+	}
+}
+

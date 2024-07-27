@@ -1,0 +1,75 @@
+/*-------------------------------------------------------
+41. Feature css
+---------------------------------------------------------*/
+
+.feature-p-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.feature-p-2 {
+    position: absolute;
+    top: 0;
+    right: 40px;
+    z-index: -1;
+}
+
+.feature-box {
+	box-shadow: 0 2px 35px rgba(0,0,0,.15);
+	.feature-icon-no {
+		padding: 3rem 4rem;
+		background-color: var(--clr-def-2);
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		z-index: 1;
+		.feature-icon {
+			
+		}
+		.feature-no {
+			span {
+				color: white;
+				-webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+				-webkit-text-stroke-width: 1px;
+				-webkit-text-stroke-color: white;
+				font-size: 60px;
+				font-weight: 800;
+				line-height: 1;
+			}
+		}
+	}
+	.feature-desc {
+		padding: 4rem 5rem;
+		h4 {
+			margin-bottom: 2rem;
+		}
+		p {
+			margin-bottom: 3rem;
+		}
+	}
+}
+
+.feature-btn {
+	i {
+		height: 50px;
+		width: 50px;
+		line-height: 50px;
+		text-align: center;
+		-webkit-border-radius: 50%;
+		border-radius: 50%;
+		background-color: var(--clr-def);
+		display: inline-block;
+		color: var(--clr-white);
+	}
+}
+
+
+
+
+
+
+
+

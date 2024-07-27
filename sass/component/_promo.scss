@@ -1,0 +1,36 @@
+/*-------------------------------------------------------
+43. Promo css
+---------------------------------------------------------*/
+
+.promo-margin {
+    margin-left: 333px;
+}
+
+.promo-area {
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: top left;
+	background-repeat: no-repeat;
+}
+
+.pattern-1 {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+}
+
+.promo-right-content {
+	.heading-5 {
+		color: var(--clr-white);
+		margin-bottom: 3rem;
+	}
+	.promo-number {
+		display: block;
+		color: var(--clr-white);
+		font-size: 72px;
+		line-height: 1;
+		font-weight: 700;
+		margin-bottom: 5rem;
+	}
+}

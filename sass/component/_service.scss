@@ -1,0 +1,191 @@
+/*-------------------------------------------------------
+27. Service CSS 
+---------------------------------------------------------*/
+
+.service-box {
+	padding: 6rem 4rem;
+	background-color: var(--clr-black);
+	-webkit-transition: all .5s ease;
+	transition: all .5s ease;
+	&:hover {
+		background-color: var(--clr-def);
+		.service-icon {
+			i {
+				background-color: var(--clr-white);
+				img {
+					&.service-clr-icon {
+						display: none;
+					}
+					&.service-icon-clr {
+						display: inline-block; 
+					}
+				}
+			}
+		}
+		.service-desc {
+			p {
+				color: #fff;
+			}
+		}
+	}
+	.service-icon {
+		margin-bottom: 3rem;
+		i {
+			height: 70px;
+			width: 70px;
+			line-height: 70px;
+			text-align: center;
+			background-color: var(--clr-def);
+			display: block;
+			-webkit-transition: all .5s ease;
+			transition: all .5s ease;
+			img {
+				-webkit-transition: all .5s ease;
+				transition: all .5s ease;
+				&.service-clr-icon {
+					display: inline-block; 
+				}
+				&.service-icon-clr {
+					display: none;
+				}
+			}
+		}
+	}
+	.service-desc {
+		h4 {
+			text-transform: capitalize;
+			margin-bottom: 2rem;
+			color: var(--clr-white);
+		}
+		p {
+			color: #BBBBBB;
+		}
+	}
+}
+
+.service-middle {
+	img {
+		min-height: 100%;
+	}
+} 
+
+.service-shape {
+	img {
+		position: absolute;
+		z-index: -1;
+		&.service-wavy {
+			left: 0;
+			top: -5%;	
+		}
+		&.service-jahaj-3 {
+			right: -108px;
+			top: 43%;
+			width: 555px;
+		}
+	}
+}
+
+.service-shape-2 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.service-middle img {
+    width: 100%;
+}
+
+//Service 2
+
+.element-bottom {
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	height: 100%;
+}
+
+.service-box-2 {
+	padding-top: 5rem;
+	&:hover {
+		.service-pic-2 {
+			.service-desc-2 {
+				height: auto;
+				&::before {
+					height: 100%;
+					background-color: var(--clr-def-2);
+				}
+				.service-icon-title {
+					.service-icon-2 {
+						i {
+							img {
+								filter: none;
+							}
+						}
+					}
+					.service-title-2 {
+						h5 {
+							color: var(--clr-white);
+						}
+					}
+				}
+				.service-text {
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.service-pic-2 {
+		position: relative;
+		z-index: 1;
+		.service-desc-2 {
+			padding: 4rem 3rem;
+			position: absolute;
+			top: -50px;
+			left: 50%;
+			width: 76%;
+			translate: -50% 0;
+			height: 130px;
+			transition: all .5s ease;
+			transition-delay: .5s;
+			overflow: hidden;
+			&::before {
+				@include pos-abs(var(--clr-white),130px,100%,1);
+				top: 0;
+				left: 0;
+				transition: all .5s ease;
+			}
+			.service-icon-title {
+				display: flex;
+				align-items: center;
+				gap: 2rem;
+				margin-bottom: 3rem;
+				.service-icon-2 {
+					i {
+						img {
+							filter: invert(1);
+						}
+					}
+				}
+				.service-title-2 {
+					h5 {
+						color: var(--clr-heading);
+						font-size: 2rem;
+						line-height: 2.8rem;
+					}
+				}
+			}
+			.service-text {
+				transition: all .5s ease;
+				opacity: 0;
+				p {
+					color: var(--clr-white);
+					margin-bottom: 3rem;
+				}
+			}
+		}
+	}
+}
+
+
+

@@ -1,0 +1,48 @@
+    
+
+/*-------------------------------------------------------
+01. Variable css
+---------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+	--clr-heading: #232323;
+	--clr-body: #666;
+	--clr-body-2: #BBBBBB;
+	--clr-bg: #F7F7F7;
+	--clr-bg-2: #f6f6f6;
+	--clr-bg-3: #EEF3F9;
+	--clr-def:  #EA1E00;
+	--clr-def-2: #000671;
+	--clr-def-3: #01054C;
+	--clr-menu: #FF4A17;
+	--clr-white: #fff;
+	--clr-black: #000;
+	--clr-black-2: #080821;
+	--font-1: 'Manrope', sans-serif;
+	--font-2: 'Manrope', sans-serif;
+	--font-3: 'Shadows Into Light', cursive;
+	--font-4: 'Yantramanav', sans-serif;
+	--font-5: 'Oswald', sans-serif;
+	--font-6: 'Roboto', sans-serif;
+    --clr-1:#1a1e2a;
+    --clr-2:#252734;
+	--clr-3:#272b37;
+    --clr-4:#1e202c;
+    --clr-5:#2a2c38;
+    --clr-6:#232323;
+    --clr-ccc:#ccc;
+    --clr-orange:#F42222;
+    --clr-rgb:0, 102, 208;
+    --clr-gradient: radial-gradient(circle, var(--clr-def) 0%, rgba(0,213,157,1) 100%);
+    --clr-gradient-2: radial-gradient(circle, var(--clr-def) 0%, var(--clr-def-3) 100%);
+    --clr-gradient-3: radial-gradient(circle, var(--clr-def) 0%, rgba(0,213,157,1) 100%);
+    --clr-gradient-4: radial-gradient(circle, var(--clr-def) 0%, rgba(203,0,213,1) 100%);
+    --clr-gradient-5: linear-gradient(to right, var(--clr-def) 0%, transparent 100%);
+    --clr-gradient-6: radial-gradient(circle, var(--clr-bg) 0%, var(--clr-bg-2) 100%);
+	--clr-overlay: rgba(5, 20, 65, 0.8);
+	--box-shadow-1: 0 0 10px rgba(0, 0 , 0, .09);
+}
+ 
+ 

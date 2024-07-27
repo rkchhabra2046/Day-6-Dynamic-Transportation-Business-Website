@@ -1,0 +1,40 @@
+
+/*-------------------------------------------------------
+19. Pagination css 
+---------------------------------------------------------*/
+
+.pagination {
+	display: block;
+	margin-top: 6rem;
+	margin-bottom: 0px;
+	text-align: center;
+	.page-value {
+		width: 43px;
+		height: 43px;
+		line-height: 45px;
+		text-align: center;
+		display: inline-block;
+		background-color: var(--clr-white);
+		font-size: 15px;
+		font-weight: 600;
+		margin: 0 2px 10px;
+		padding: 0;
+		-webkit-transition: all 0.3s ease 0s;
+		-moz-transition: all 0.3s ease 0s;
+		-ms-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
+		&.current {
+			background-color: var(--clr-def-2);
+			color: var(--clr-white);
+		}
+		&:hover {
+			background-color: var(--clr-def-2);
+			color: var(--clr-white);
+		}
+		i {
+			font-size: 15px;
+		}
+	}
+}
+

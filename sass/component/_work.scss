@@ -1,0 +1,117 @@
+/*-------------------------------------------------------
+30. Work css 
+---------------------------------------------------------*/
+
+@media (min-width: 1600px) {
+	.sd-container-fluid {
+		max-width: 1825px;
+	}
+}
+
+//Project Masonry
+
+.project-page {
+	.project-card {
+		overflow: hidden;
+		.project-img {
+			position:relative;
+			z-index: 1;
+			&:hover {
+				.port-overlay {
+					.port-desc {
+						transform: scale(1);
+					}
+				}
+			}
+			.port-overlay {
+				position: absolute;
+				z-index: 1;
+				top: 0;
+				left: 0;
+				height: 100%;
+				width: 100%;
+				-webkit-transition: all .5s ease;
+				transition: all .5s ease;
+				display: flex;
+				align-items: flex-end;
+				justify-content: flex-end;
+				.port-desc {
+					padding: 4rem 3rem;
+					background: var(--clr-def);
+					margin: 0 3rem 3rem 3rem;
+					border-radius: 5px;
+					transform: scale(0);
+					transition: all .5s ease-in-out;
+					.port-links {
+						margin-bottom: 2rem;
+						display: flex;
+						background: var(--clr-white);
+						border-radius: 5px;
+						width: fit-content;
+						padding: 18px 3rem;
+						line-height: 1;
+						a {
+							margin-right: 1rem;
+							padding-right: 1rem;
+							border-right: 1px solid #e7e7e7;
+							font-size: 1.4rem;
+							color: var(--clr-def);
+							&:last-child {
+								margin-right: 0;
+								padding-right: 0;
+								border-right: none;
+							}
+						}
+					}
+					.port-content {
+						h4 {
+							color: var(--clr-white);
+						}
+						p {
+							color: var(--clr-white);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+.filter-item {
+}
+
+.filter-active.project-page.magnific-mix-gallery {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.sec-btn-area {
+    margin-bottom: 6rem;
+}
+
+.filter-menu-style-1 {
+	button {
+		padding: 1.7rem 3rem 1.5rem 3rem;
+		margin-right: 1rem;
+		background: var(--clr-white);
+		color: var(--clr-heading);
+		font-weight: 600;
+		border: 1px solid var(--clr-body-2);
+		text-transform: capitalize;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		line-height: 1;
+		font-family: var(--font-2);
+		letter-spacing: 1px;
+		-webkit-transition: background-color .5s ease;
+		transition: background-color .5s ease;
+		&:hover,
+		&.active {
+			background-color: var(--clr-def);
+			color: var(--clr-white);
+		}
+	}
+} 
+
